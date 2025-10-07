@@ -12,23 +12,44 @@ const fetchPlayers = async () => {
   const res = await fetch('/players.json');
   return res.json();
 }
+const playersPromiser = fetchPlayers();
 function App() {
-  const playersPromiser = fetchPlayers();
   const [toggle, SetToggle] = useState(true);
   const handleClick = (newState) => {
     SetToggle(newState);
   }
+  const [availableBalance, SetAvailableBalance] = useState(60000000);
+  const handleCoin = (balance) => {
+    if (balance > availableBalance) {
+      alert('Amount Not Enough To Buy');
+    }
+    else {
+      const newBalance = availableBalance - balance;
+      SetAvailableBalance(newBalance);
+    }
+  };
+  const [selectPlayers, SetSelectPlayers] = useState([]);
+  const handleSelectedPlayer = ({ player }) => {
+    const newPlayer = [...selectPlayers, player];
+    SetSelectPlayers(newPlayer);
+  }
+
   return (
     <>
-      <Nav navImg={navImg} coinImg={coinImg}></Nav>
+      <Nav navImg={navImg} coinImg={coinImg} availableBalance={availableBalance}></Nav>
       <Banner
         handleClick={handleClick}
       ></Banner>
       {
-        toggle? <Suspense fallback={<h2>Loading Players</h2>}>
-          <AvailablePlayers playersPromiser={playersPromiser}>
+        toggle ? <Suspense fallback={<h2>Loading Players</h2>}>
+          <AvailablePlayers
+            playersPromiser={playersPromiser}
+            toggle={toggle}
+            handleCoin={handleCoin}
+            handleSelectedPlayer={handleSelectedPlayer}
+          >
           </AvailablePlayers>
-        </Suspense> : <SelectedPlayers></SelectedPlayers>
+        </Suspense> : <SelectedPlayers selectPlayers={selectPlayers} toggle={toggle}></SelectedPlayers>
       }
     </>
   )

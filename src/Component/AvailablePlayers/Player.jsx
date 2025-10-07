@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const Player = ({ player }) => {
+const Player = ({ player, handleCoin, handleSelectedPlayer }) => {
+    const [selected, SetSelected] = useState(false)
     const { player_name, rating, price, player_image, player_country, playing_role } = player;
     return (
         <div className=' my-2  flex flex-col  rounded-xl px-5 py-3 shadow-sm'>
@@ -10,8 +11,11 @@ const Player = ({ player }) => {
             <h2><span className='font-bold'>Rating</span> : {rating}</h2>
             <div className='flex justify-between'>
                 <h2> <span className='font-bold'>Price</span> : {price}</h2>
-                <button className="btn  shadow-none">Small</button>
-
+                <button disabled={selected} className="btn shadow" onClick={() => {
+                    handleCoin(parseInt(price.split('$').join('').split(',').join('')));
+                    SetSelected(true);
+                    handleSelectedPlayer({ player });
+                }}>{selected ? "Selected" : "Choose Player"}</button>
             </div>
         </div>
     );

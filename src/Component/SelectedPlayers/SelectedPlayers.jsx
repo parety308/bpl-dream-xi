@@ -1,9 +1,13 @@
 import React from 'react';
+import SPlayer from './SPlayer';
 
-const SelectedPlayers = () => {
+const SelectedPlayers = ({toggle,selectPlayers}) => {
+    // console.log(selectPlayers);
     return (
-        <div>
-            <h1>Selected</h1>
+        <div className={`${toggle ? "bg-amber-200" : ""}`}>
+            {
+                selectPlayers.map(player=><SPlayer player={player}></SPlayer>)
+            }
         </div>
     );
 };
