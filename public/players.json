@@ -1,0 +1,122 @@
+[
+    {
+        "player_image": "https://i.ibb.co.com/Lhh0fznf/sakib.jpg",
+        "player_name": "Shakib Al Hasan",
+        "player_country": "Bangladesh",
+        "playing_role": "All-rounder",
+        "rating": 94,
+        "batting_style": "Left-hand bat",
+        "bowling_style": "Slow left-arm orthodox",
+        "price": "$150,000"
+    },
+    {
+        "player_image": "https://i.ibb.co.com/Lhh0fznf/sakib.jpg",
+        "player_name": "Tamim Iqbal",
+        "player_country": "Bangladesh",
+        "playing_role": "Batsman",
+        "rating": 88,
+        "batting_style": "Left-hand bat",
+        "bowling_style": "Right-arm offbreak",
+        "price": "$120,000"
+    },
+    {
+        "player_image": "https://i.ibb.co.com/Lhh0fznf/sakib.jpg",
+        "player_name": "Mustafizur Rahman",
+        "player_country": "Bangladesh",
+        "playing_role": "Bowler",
+        "rating": 90,
+        "batting_style": "Left-hand bat",
+        "bowling_style": "Left-arm fast-medium",
+        "price": "$130,000"
+    },
+    {
+        "player_image": "https://i.ibb.co.com/Lhh0fznf/sakib.jpg",
+        "player_name": "Mahmudullah Riyad",
+        "player_country": "Bangladesh",
+        "playing_role": "All-rounder",
+        "rating": 85,
+        "batting_style": "Right-hand bat",
+        "bowling_style": "Right-arm offbreak",
+        "price": "$110,000"
+    },
+    {
+        "player_image": "https://i.ibb.co.com/Lhh0fznf/sakib.jpg",
+        "player_name": "Mushfiqur Rahim",
+        "player_country": "Bangladesh",
+        "playing_role": "Wicket-keeper Batsman",
+        "rating": 89,
+        "batting_style": "Right-hand bat",
+        "bowling_style": "N/A",
+        "price": "$125,000"
+    },
+    {
+        "player_image": "https://i.ibb.co.com/Lhh0fznf/sakib.jpg",
+        "player_name": "Litton Das",
+        "player_country": "Bangladesh",
+        "playing_role": "Wicket-keeper Batsman",
+        "rating": 86,
+        "batting_style": "Right-hand bat",
+        "bowling_style": "N/A",
+        "price": "$100,000"
+    },
+    {
+        "player_image": "https://i.ibb.co.com/Lhh0fznf/sakib.jpg",
+        "player_name": "Afif Hossain",
+        "player_country": "Bangladesh",
+        "playing_role": "All-rounder",
+        "rating": 82,
+        "batting_style": "Left-hand bat",
+        "bowling_style": "Right-arm offbreak",
+        "price": "$90,000"
+    },
+    {
+        "player_image": "https://i.ibb.co.com/Lhh0fznf/sakib.jpg",
+        "player_name": "Nasum Ahmed",
+        "player_country": "Bangladesh",
+        "playing_role": "Bowler",
+        "rating": 80,
+        "batting_style": "Left-hand bat",
+        "bowling_style": "Slow left-arm orthodox",
+        "price": "$75,000"
+    },
+    {
+        "player_image": "https://i.ibb.co.com/Lhh0fznf/sakib.jpg",
+        "player_name": "Taskin Ahmed",
+        "player_country": "Bangladesh",
+        "playing_role": "Bowler",
+        "rating": 84,
+        "batting_style": "Right-hand bat",
+        "bowling_style": "Right-arm fast",
+        "price": "$95,000"
+    },
+    {
+        "player_image": "https://i.ibb.co.com/Lhh0fznf/sakib.jpg",
+        "player_name": "Rony Talukdar",
+        "player_country": "Bangladesh",
+        "playing_role": "Batsman",
+        "rating": 78,
+        "batting_style": "Right-hand bat",
+        "bowling_style": "Right-arm medium",
+        "price": "$70,000"
+    },
+    {
+        "player_image": "https://i.ibb.co.com/Lhh0fznf/sakib.jpg",
+        "player_name": "Sabbir Rahman",
+        "player_country": "Bangladesh",
+        "playing_role": "Batsman",
+        "rating": 76,
+        "batting_style": "Right-hand bat",
+        "bowling_style": "Legbreak",
+        "price": "$65,000"
+    },
+    {
+        "player_image": "https://i.ibb.co.com/Lhh0fznf/sakib.jpg",
+        "player_name": "Mehidy Hasan Miraz",
+        "player_country": "Bangladesh",
+        "playing_role": "All-rounder",
+        "rating": 87,
+        "batting_style": "Right-hand bat",
+        "bowling_style": "Right-arm offbreak",
+        "price": "$115,000"
+    }
+]
