@@ -33,12 +33,18 @@ function App() {
     const newPlayer = [...selectPlayers, player];
     SetSelectPlayers(newPlayer);
   }
+  const removePlayer=(p)=>{
+    const reaminingPlayer=selectPlayers.filter(ply=>ply.player_name!==p.player_name);
+    SetSelectPlayers(reaminingPlayer);
+  }
 
   return (
     <>
       <Nav navImg={navImg} coinImg={coinImg} availableBalance={availableBalance}></Nav>
       <Banner
         handleClick={handleClick}
+        toggle={toggle}
+        selectPlayers={selectPlayers}
       ></Banner>
       {
         toggle ? <Suspense fallback={<h2>Loading Players</h2>}>
@@ -49,7 +55,12 @@ function App() {
             handleSelectedPlayer={handleSelectedPlayer}
           >
           </AvailablePlayers>
-        </Suspense> : <SelectedPlayers selectPlayers={selectPlayers} toggle={toggle}></SelectedPlayers>
+        </Suspense> : <SelectedPlayers
+         selectPlayers={selectPlayers} 
+         toggle={toggle}
+         handleCoin={handleCoin}
+         removePlayer={removePlayer}
+         ></SelectedPlayers>
       }
     </>
   )
